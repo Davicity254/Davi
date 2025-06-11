@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Davi's Survey</h1>
+    <p id="description">Thank you for visiting my platform. Your response will help improve our content</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name" >Name:</label>
+        <input type="text" id="name" name="name" placeholder="city" required/>
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="city@email.com" required/>
+        <label id="number-label" for="number">Number(contact):</label>
+        <input id="number" type="number" min="10" max="14" placeholder="XXXXXX" required/>  
+       </fieldset>
+       <fieldset>
+    <label for="querry">How was the content:  
+      <select id="dropdown" selectable> 
+        <option value="amazing">Amazing</option>  
+        <option value="awsome">Awsome</option>
+      </select>
+       </fieldset>
+       <fieldset>
+    </label>
+      <label for="rating">Would you return for more learning?</label>
+      <input type="radio" id="yes" name="yes" value="yes">Yes</input>
+      <input type="radio" id="no" name="no" value="no">No</input>
+   <p> <label for="rating">Would you consider sharing with a friend for more learning?</label>
+       <input type="radio" name="yes" value="yes">Yes</input>
+       <input type="radio" name="no" value="no">No</input>
+    </p>   
+     </fieldset>
+    <fieldset>
+      <label for="media">How did you find the platform?</label>
+      <input type="checkbox" id="friend" value="friend">Friend</input>
+      <input type="checkbox" id="online" value="online">Online</input>
+    </fieldset>     
+      <textarea type="text" row="20" colm="30" placeholder="comment"></textarea>
+      
+    <button id="submit">Submit</button>
+    </form> 
+  </body>
+</html>
